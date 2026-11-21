@@ -1,0 +1,377 @@
+<html>
+
+<head>
+    <title>NETFLIX3</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #343635;
+            width: 100vw;
+        }
+
+        .first {
+            background-image: url(https://149695847.v2.pressablecdn.com/wp-content/uploads/2019/05/apps.55787.9007199266246365.687a10a8-4c4a-4a47-8ec5-a95f70d8852d.jpg);
+            background-size: cover;
+            width: 100%;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding-top: 30px;
+            box-sizing: border-box;
+
+
+        }
+
+        .nav {
+            /* height: 13vh; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px 10px 20px;
+            width: 70%;
+            margin: auto;
+            
+            box-sizing: border-box;
+            background-color: #000000;
+            border-radius: 30px;
+
+        }
+
+        .netflix {
+            /* height: 13vh; */
+
+            color: rgb(255, 186, 186);
+            font-size: 3rem;
+            font-weight: 300;
+        }
+
+        .eng {
+            color: white;
+            border: 1px solid white;
+            margin: 10px;
+            padding: 5px 7px;
+            border-radius: 5px;
+        }
+
+        .sign {
+            background-color: red;
+            margin: 10px;
+            padding: 5px 7px;
+            border-radius: 5px;
+        }
+
+        .sign a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .center {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 6rem;
+            padding: 6rem;
+
+        }
+
+        .center h1 {
+            color: white;
+            font-size: 3.5rem;
+            text-align: center;
+        }
+
+        .center h5 {
+            color: white;
+            font-size: 1.66rem;
+            font-weight: 600;
+        }
+
+        .center h6 {
+            color: white;
+            font-size: 1.34rem;
+            font-weight: 600;
+        }
+
+        .inpt {
+            margin-top: 1rem;
+            display: flex;
+        }
+
+        .inpt input {
+            background-color: transparent;
+            height: auto;
+            width: 40%;
+            color: white;
+            font-size: 2rem;
+            padding: 1rem;
+            border: 1px solid white;
+            border-radius: 10px;
+        }
+
+        .inpt input::placeholder {
+            color: white;
+        }
+
+
+        .inpt button {
+            height: auto;
+            width: 40%;
+            background-color: red;
+            color: white;
+            font-size: 2rem;
+            margin-left: 1rem;
+            border-radius: 10px;
+        }
+
+        .tv {
+            background-color: black;
+            color: #35aba3;
+            padding: 1.875rem;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+        }
+
+        footer {
+            background-color: black;
+        }
+
+        footer h1 {
+            color: white;
+            font-size: 3rem;
+            padding: 3.125rem 0rem 1.25rem 0rem;
+            text-align: center;
+            font-weight: 900;
+        }
+
+        .column {
+            margin: 0rem 9.6rem;
+            display: grid;
+            grid-row-gap: 10px;
+        }
+
+        .column1 {
+            color: white;
+            background-color: #313333;
+            display: flex;
+            justify-content: space-between;
+            padding: 1.25rem;
+            font-size: 1.563rem;
+        }
+
+        footer h4 {
+            color: white;
+            font-size: 1.563rem;
+            padding: 3.125rem 0rem 1.25rem 0rem;
+            text-align: center;
+
+        }
+
+        .eg {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 10px;
+        }
+
+        .eg input {
+            background-color: transparent;
+            color: white;
+            height: 4vh;
+            font-size: 1rem;
+            padding: 7px 17px 5px 5px;
+            border: 1px solid white;
+            margin: 0.625rem;
+        }
+
+        .eg button {
+            height: 4vh;
+            background-color: red;
+            color: white;
+            font-size: 1rem;
+            margin: 0.625rem;
+        }
+
+        .footer1 {
+            background-color: black;
+            padding: 1.875rem 14.4rem;
+            color: white;
+        }
+
+        .footer1 h6 {
+            color: #ffffffb3;
+            font-size: 1rem;
+            padding: 0.625rem 0rem;
+        }
+
+        .footer1 a {
+            color: #ffffffb3;
+            text-decoration: none;
+        }
+
+        .otherlinks {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-row-gap: 0.625rem;
+            margin: 0.625rem 0rem;
+        }
+
+        .engi {
+            color: white;
+            border: 1px solid #ffffffb3;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .net {
+            margin: 1.875rem 0rem;
+            color: #ffffffb3;
+        }
+        body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.tv img {
+  max-width: 100%;
+  height: auto;
+}
+
+.column {
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.footer1 {
+  padding: 1.875rem 2rem;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="first">
+        <div class="nav">
+            <div class="netflix">NETFLIX</div>
+            <div class="es">
+                <span class="eng">English &#10836;</span>
+                <span class="sign"><a href="">Sign-In</a></span>
+            </div>
+        </div>
+        <div class="center">
+            <h1>Enjoy big movies,hit series and more from ₹149.</h1>
+            <h5>Join today. cancel anytime.</h5>
+            <h6>Ready to watch? Enter your email to create or restart your membership.</h6>
+            <div class="inpt">
+                <input type="E-mail" id="e-mail" placeholder="Email address....">
+                <button>Get Started ></button>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="tv">
+        <div class="text">
+            <h1>Enjoy on your TV.</h1>
+            <h4>Watch on smart TVs,Playstation,Xbox,Chromecast, Apple TV, Blue-ray player and more.</h4>
+        </div>
+        <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="TV">
+    </div>
+    <br>
+    <div class="tv">
+        <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg">
+        <div class="text">
+            <h1>Download your shows to watch offline</h1>
+            <h4>Save your favourites easily and always have something to watch.</h4>
+        </div>
+    </div>
+    <br>
+    <div class="tv">
+        <div class="text">
+            <h1>Watch everywhere</h1>
+            <h4>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</h4>
+        </div>
+        <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile-in.png">
+    </div>
+    <br>
+    <div class="tv">
+        <img
+            src="https://occ-0-2164-3467.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABVr8nYuAg0xDpXDv0VI9HUoH7r2aGp4TKRCsKNQrMwxzTtr-NlwOHeS8bCI2oeZddmu3nMYr3j9MjYhHyjBASb1FaOGYZNYvPBCL.png?r=54d">
+        <div class="text">
+            <h1>Create profiles for kids</h1>
+            <pre>Send children on adventures with their favourite characters
+in a space made just for them—free with your membership.</pre>
+        </div>
+    </div>
+    <br>
+    <footer>
+        <h1>Frequenlty Asked Questions</h1>
+        <div class="column">
+            <div class="column1">
+                <p>What is Netflix?</p>
+                <p>&#43;</p>
+            </div>
+            <div class="column1">
+                <p>How much does Netflix cost?</p>
+                <p>&#43;</p>
+            </div>
+            <div class="column1">
+                <p>Where can I watch?</p>
+                <p>&#43;</p>
+            </div>
+            <div class="column1">
+                <p>how do I cancel?</p>
+                <p>&#43;</p>
+            </div>
+            <div class="column1">
+                <p>What can I watch on Netflix?</p>
+                <p>&#43;</p>
+            </div>
+            <div class="column1">
+                <p>Is netflix good for kids?</p>
+                <p>&#43;</p>
+            </div>
+        </div>
+        <h4>Ready to watch? Enter your email to craete or restart your membership.</h4>
+        <div class="eg">
+            <input type="E-mail" id="e-mail" placeholder="Email address....">
+            <button>Get Started ></button>
+        </div>
+    </footer>
+    <br>
+    <footer class="footer1">
+        <h6>Questions? Call <a href="tel:000-800-919-1694"> 000-800-919-1694</a></h6>
+        <div class="otherlinks">
+            <p><a href="https://help.netflix.com/support/412">FAO</a></p>
+            <p><a href="https://help.netflix.com/">Help Centre</a></P>
+            <p><a href="https://www.netflix.com/youraccount">Account</a></P>
+            <p><a href="https://media.netflix.com/">Media Centre</a></P>
+            <p><a href="http://ir.netflix.com/">Investor Relation</a></P>
+            <p><a href="https://jobs.netflix.com/jobs">Jobs</a></P>
+            <p><a href="https://www.netflix.com/watch">Ways to Watch</a></P>
+            <p><a href="https://help.netflix.com/legal/termsofuse">Terms of Use</a></P>
+            <p><a href="https://help.netflix.com/legal/privacy">Privacy</a></P>
+            <p><a href="https://www.netflix.com/in/#">Cookie Preferences</a></P>
+            <p><a href="https://help.netflix.com/legal/corpinfo">Corporate Information</a></P>
+            <p><a href="https://help.netflix.com/contactus">Contact Us</a></P>
+            <p><a href="https://fast.com/">Speed Test</a></P>
+            <p><a href="https://help.netflix.com/legal/notices">Legal Notices</a></P>
+            <p><a href="https://www.netflix.com/in/browse/genre/839338">Only on Netflix</a></P>
+        </div>
+        <br>
+        <span class="engi">English &#10836;</span>
+        <div class="net">Netflix india</div>
+    </footer>
+</body>
+
+</html> 
